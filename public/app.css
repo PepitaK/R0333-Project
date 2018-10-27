@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:  #000;
+  background-image: url("avaruus.jpg");
+  font-family: verdana;
+  font-size: 12px;
+  color: #fff;
+  align-items: center;
+  margin: auto;
+  width: 75%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  align: center;
+  margin: auto;
+  width: 100%;
+}
+
+h1{
+  font-family: arial black;
+  font-size: 34px;
+}
+h2{
+  font-family: arial;
+  font-size: 14px;
+}
+button {
+  background-color: #fff;
+  font-family: verdana;
+  font-size: 14px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  display:block;
+  width: 400px;
+  border-radius: 4px;
+  border:5px solid;
+  border-color: #666;
+  position: relative;
+  margin: 0 auto;
+
+}
+button:hover {
+background-color: lightblue;
+}
+
+img{
+  max-width: 400px;
+  max-height: 400px;
+  margin:auto;
+}
+
+table{
+  padding: 5px;
+  width: 250px;
+}
+
+#root {
+  align: center;
+  margin: auto;
+  width: 100%;
+}
+
+#picture{
+  padding: 10px;
+
+}
+#pic{
+  border: 5px;
+  border-style: double;
+  border-color: #fff;
+  padding: 1px;
+  max-height: 400px;
+  max-width: 400px;
+  object-fit:cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  #napit{
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+#wrapper{
+  border: 1px;
+  border-style: solid;
+  border-color: #777;
+  width: 500px;
+  background-color: #666;
+  opacity: 0.9;
+  padding: 0 15px 0 15px;
+}
+
+#root{
+  width: 500px;
+  height: 100%;
+  bottom: 0px;
+  margin: 0 auto;
+}
+
+#footer{
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
