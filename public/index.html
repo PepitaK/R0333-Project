@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,22 +23,37 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>Guess the Title BY PEPITA</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+    <div id="wrapper">
+      <h1 align="center"><img src="rocket.png" height="55"> <img src="astronaut.png" height="55"> <img src="earth.png" height="55">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <br>Quess the Title!</h1>
+      <h2 align="center">Can you quess the title of a space themed picture?</h2>
+      <div id="pisteet">
+        <h2>Score: 0</h2>
+      </div>
+
+      <div id="picture">
+        <div id="test"></div>
+        <div id="pic">Kuva</div>
+        <div id="napit">Kuva</div>
+      </div> <!--  -->
+      <div id="footer">
+        <table>
+          <tr>
+          <td>  <h3>Pepita K.  </h3></td>
+          <td>  <img src="NASA-logo.png" alt="NASA logo" height="55" width="55"></td>
+          </tr>
+        </table>
+    </div> <!-- -->
+  </div> <!-- root loppuu -->
+</body>
+   <script src="index.js"></script>
 </html>
