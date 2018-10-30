@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import ReactDOM from 'react-dom';
-import "./app.css";
+import "app.css";
 
 // pisteiden lasku ulkona funktiosta, ettei nollaannu joka kierroksella
 var pisteet = 0;
