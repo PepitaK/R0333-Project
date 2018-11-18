@@ -73,15 +73,14 @@ table{
 
 }
 #pic{
-  border: 5px;
-  border-style: double;
-  border-color: #fff;
   padding: 1px;
   max-height: 400px;
   max-width: 400px;
   object-fit:cover;
   margin-left: auto;
   margin-right: auto;
+  border: 10px solid lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
   #napit{
@@ -94,10 +93,12 @@ table{
   border: 1px;
   border-style: solid;
   border-color: #777;
-  width: 500px;
+  width: 450px;
   background-color: #666;
   opacity: 0.9;
-  padding: 0 15px 0 15px;
+  padding: 0 10px 0 10px;
+  border: 10px solid grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #root{
