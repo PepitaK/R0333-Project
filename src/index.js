@@ -34,6 +34,14 @@ request.onload = function() {
     return (<h2>Score: {pisteet}</h2>);
   }
 
+  const divStyle = {
+    color: 'blue',
+  };
+
+  function HelloWorldComponent() {
+    return <div style={divStyle}>Hello World!</div>;
+  }
+
   // tarkastaa vastaukset
   if (request.status >= 200 && request.status < 400) {
 
@@ -50,7 +58,8 @@ request.onload = function() {
         if (rand.title === data[vastaus].title) {
           // jos vastaus on oikein, scoreen tulee +1 ja se päivittyy wrapperiin
           console.log("OIKEIN", pisteet++)
-          ReactDOM.render(<Testi/>, document.getElementById('pisteet'));
+          ReactDOM.render(<Testi/>, document.getElementById('pisteet'));;
+          HelloWorldComponent();
           uusiHaku();
           //  uusien juttujen haku
 
