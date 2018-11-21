@@ -72,13 +72,13 @@ uusiHaku = () => {
 
               //  jos vastaus on muu kuin oikea, ei pisteitä ja uusi haku
               } else {
-                console.log("VÄÄRIN")
+                console.log("VÄÄRIN" + rand.media_type)
                 uusiHaku();
               }
 
 
             // jos on mediatype video, uusi haku ja konsoliin kirjaus
-            if (result.media_type == "video") {
+            if (rand.media_type == "video") {
               uusiHaku();
               console.log("video ohitettu");
             }
