@@ -29,7 +29,7 @@ uusiHaku = () => {
 
 
     // Tulostaa kuvan rand.url:ista, eli apin kohdasta, joka antaa kuvan url-osoitteen
-    // image -tagi on divin sisällä.
+    // image -tagi on divin sisällä. Jos tulee error, niin tulee placeholder kuva.
       function Kuva(props) {
         return <div>
           <img src={rand.url} alt="" onError={(e)=>{e.target.onerror = null; e.target.src="stolen_image.jpg"}}/>
