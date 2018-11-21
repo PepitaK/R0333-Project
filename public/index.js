@@ -32,7 +32,7 @@ uusiHaku = () => {
     // image -tagi on divin sisällä.
     Kuva(props) = () => {
       return <div>
-        <img src={rand.url} width="500" alt="img"></img>
+        <img src={rand.url} onerror="this.src='stolen_image.jpg'" width="500" alt="img"></img>
       </div>;
     }
 
