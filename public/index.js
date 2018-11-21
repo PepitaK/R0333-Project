@@ -30,10 +30,10 @@ uusiHaku = () => {
 
     // Tulostaa kuvan rand.url:ista, eli apin kohdasta, joka antaa kuvan url-osoitteen
     // image -tagi on divin sisällä.
-    Kuva(props) = () => {
-      return <div>
-        <img src={rand.url} onerror="this.src='stolen_image.jpg'" width="500" alt="img"></img>
-      </div>;
+      function Kuva(props) {
+        return <div>
+          <img src={rand.url} alt="" onError={(e)=>{e.target.onerror = null; e.target.src="stolen_image.jpg"}}/>
+        </div>;
     }
 
 // render -toiminto kuvan tulostamiseksi html-sivun pic -diviin.
